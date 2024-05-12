@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="hero_main">
-        <div> testing</div>
+        <div> Testing</div>
         
         
       </div>
