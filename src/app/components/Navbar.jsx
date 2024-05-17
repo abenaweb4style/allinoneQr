@@ -30,12 +30,12 @@ const Navbar = () => {
       // Enable scrolling
       else body.classList.remove(...customBodyStyle)
 
-      // Sticky strick
-      const customStyle = ["sticky-nav", "fixed", "border-b"]
-      window.onscroll = () => {
-          if (window.scrollY > 80) navRef.current.classList.add(...customStyle)
-          else navRef.current.classList.remove(...customStyle)
-      }
+    //   // Sticky strick
+    //   const customStyle = ["sticky-nav", "fixed", "border-b"]
+    //   window.onscroll = () => {
+    //       if (window.scrollY > 80) navRef.current.classList.add(...customStyle)
+    //       else navRef.current.classList.remove(...customStyle)
+    //   }
     }, [state])
     
 
