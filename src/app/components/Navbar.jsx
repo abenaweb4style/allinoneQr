@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 // Add this style to your css file
 
 
-export default () => {
+const Navbar = () => {
 
   const [state, setState] = useState(false)
   const navRef = useRef()
@@ -109,3 +109,6 @@ export default () => {
       </nav>
   )
 }
+
+
+export default Navbar
