@@ -37,6 +37,11 @@ body {
   height:400px;
   background-color: rgb(83, 203, 233);
 }
+.hero_main_mob{
+  width:100%;
+  height:100vh;
+  background-color: rgb(243, 219, 112)
+}
 
 .container{
   max-width: 1300px;

@@ -45,7 +45,7 @@ const Socials = () => {
 
                         {/* LOGO 4 */}
                         <li>
-                        <a href="https://www.facebook.com" target='_blank'>
+                        <a href="https://web.facebook.com/4styleclothin/?_rdc=1&_rdr" target='_blank'>
                                 <img
                                     src="images/facebookLogo.png"
                                     width={120}
