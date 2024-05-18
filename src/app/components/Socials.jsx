@@ -21,7 +21,7 @@ const Socials = () => {
 
                         {/* LOGO 2 */}
                         <li>
-                        <a href="https://www.pinterest.com/" target='_blank'>
+                        <a href="https://www.pinterest.ca/apeafaustina123/" target='_blank'>
                                 <img
                                     src="images/Pinterest-Logo.png"
                                     width={120}
@@ -33,7 +33,7 @@ const Socials = () => {
 
                         {/* LOGO 3 */}
                         <li>
-                        <a href="https://www.tiktok.com" target='_blank'>
+                        <a href="https://www.tiktok.com/@4styleclothingbya?_t=8mQ5S6zL8X0&_r=" target='_blank'>
                                 <img
                                     src="images/tiktoklogo.png"
                                     width={120}

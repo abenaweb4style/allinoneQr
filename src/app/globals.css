@@ -59,12 +59,13 @@ body {
   /* background:yellow;   */
   height:100%;
 }
+
 .sticky-nav {
   /* animation: sticky-nav 300ms; */
 }
  
 .spacer{
-  height:400px;
+  height:100px;
 }
 
 
@@ -73,6 +74,10 @@ body {
   height: 100vh; /* Adjust as needed */
   width: 100vw; /* Adjust as needed */
   overflow: hidden;
+}
+
+.main{
+  background: rgb(241, 243, 210);
 }
 
 .slide {
@@ -91,11 +96,18 @@ body {
   display: flex;
   gap: 2%;
   padding: 5% 3%;
+  background:white;
 }
+
 
 .map-text {
   padding: 3%;
   line-height: 1.6;
+}
+
+.map-wrapper h1{
+  text-align:center;
+  font-weight: bold;
 }
 
 .map-text h3 {
@@ -143,8 +155,53 @@ body {
   /* border:1px solid white; */
   /* padding:40px 60px;
   border-radius:10px; */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.phone-icon{
+  margin-top:40px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+  
+}
+
+.fon-icon{
+  padding:20px;
+  border:2px solid white;
+  border-radius: 50%;
+  transition: all 500ms ease-in-out;
+}
+
+.fon-icon:hover{
+  padding:30px;
+}
+
+.phone-icon p{
+  padding:10px;
+  cursor: pointer;
+}
+
+.footer{
+  width:100%;
+  background:rgb(182, 182, 159);
+  padding:90px 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer h1{
+  font-weight:bold;
+  color:rgb(46, 44, 44);
+  margin-top:10px;
+}
 .hero-text button{
   margin-top:270px;
   padding:10px 40px;

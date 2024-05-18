@@ -12,11 +12,14 @@ import backgroundImage6 from "./images/53.jpg"
 import backgroundImage7 from "./images/67.jpg"
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Footer from "./components/Footer";
+import { FaPhone } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 
 
 export default function Home() {
-  const img = [backgroundImage, backgroundImage2,backgroundImage3,backgroundImage4,backgroundImage5,backgroundImage6,backgroundImage7]
+  const img = [backgroundImage, backgroundImage2, backgroundImage3, backgroundImage4, backgroundImage5, backgroundImage6, backgroundImage7]
 
   const [num, setNum] = useState(0)
 
@@ -44,16 +47,16 @@ export default function Home() {
 
 
   return (
-    <main className="">
+    <main className=" main">
       <Navbar />
       <div className="hero_main hidden md:block">
         <div className="container ">
           <div className="hero-container">
-          <div className="hero-text">testing</div>
+            <div className="hero-text">testing</div>
           </div>
-          
+
         </div>
-        
+
 
 
       </div>
@@ -70,9 +73,10 @@ export default function Home() {
       }}>
         <div className="container hero-container">
           <div className="hero-text">
-            
-            <Link href="https://4stylegh.store/" target="_blank"><button> Shop</button></Link>
-            
+
+            <Link href="https://4stylegh.store/" target="_blank"><button> Visit Our Online Shop</button></Link>
+            <Link  className ="phone-icon" href="tel:+233 543645082" target="_blank"><IconContext.Provider value={{ color: 'white', size: '40px', marginTop:'40px' }}> <div className="fon-icon"><FaPhone /></div> </IconContext.Provider ><p>Contact us</p> </Link>
+
           </div>
         </div>
 
@@ -80,12 +84,15 @@ export default function Home() {
       </div>
       <Socials />
 
+
       <div className='map-wrapper'>
 
-
+        <div className="container">
+          <h1 className=""> Visit 4style Clothing or any of our Outlets</h1>
+        </div>
         <div className='google-map'>
           <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.189688085716!2d-0.11913672612612175!3d5.685704694295934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d7edf0feff9%3A0xb700798e6efd9c0d!2s4style%20Clothing!5e0!3m2!1sen!2sgh!4v1715961357638!5m2!1sen!2sgh" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.189688085716!2d-0.11913672612612175!3d5.685704694295934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d7edf0feff9%3A0xb700798e6efd9c0d!2s4style%20Clothing!5e0!3m2!1sen!2sgh!4v1715961357638!5m2!1sen!2sgh"
             style={{ border: '0' }} allowfullscreen=""
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div className='map-text'>
@@ -97,7 +104,7 @@ export default function Home() {
         </div>
         <div className='google-map'>
           <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.8212785584456!2d-0.1833521261269684!3d5.59340839438738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9afa0e163461%3A0xf035cab6e6449125!2sLancaster%20Accra!5e0!3m2!1sen!2sgh!4v1715960113674!5m2!1sen!2sgh"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.8212785584456!2d-0.1833521261269684!3d5.59340839438738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9afa0e163461%3A0xf035cab6e6449125!2sLancaster%20Accra!5e0!3m2!1sen!2sgh!4v1715960113674!5m2!1sen!2sgh"
             style={{ border: '0' }} allowfullscreen=""
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div className='map-text'>
@@ -109,7 +116,7 @@ export default function Home() {
         </div>
         <div className='google-map'>
           <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127063.52225777223!2d-0.3123190566406309!3d5.606095500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b1fff72b87d%3A0xff2fe8ba5dfa0561!2sKotoka%20International%20Airport%20-%20Accra!5e0!3m2!1sen!2sgh!4v1715962032642!5m2!1sen!2sgh"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127063.52225777223!2d-0.3123190566406309!3d5.606095500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b1fff72b87d%3A0xff2fe8ba5dfa0561!2sKotoka%20International%20Airport%20-%20Accra!5e0!3m2!1sen!2sgh!4v1715962032642!5m2!1sen!2sgh"
             style={{ border: '0' }} allowfullscreen=""
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div className='map-text'>
@@ -122,6 +129,7 @@ export default function Home() {
       </div>
       <div className="spacer"></div>
       {/* <Hero/> */}
+      <Footer />
     </main>
   );
 }
