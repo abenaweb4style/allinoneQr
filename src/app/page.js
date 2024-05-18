@@ -88,7 +88,7 @@ export default function Home() {
       <div className='map-wrapper'>
 
         <div className="container">
-          <h1 className=""> Visit 4style Clothing or any of our Outlets</h1>
+          <h1 className=""> Drop by one of our 4style Clothing outlets</h1>
         </div>
         <div className='google-map'>
           <iframe
