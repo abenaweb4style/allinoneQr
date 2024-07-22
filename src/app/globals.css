@@ -78,7 +78,14 @@ body {
 
 .main{
   background:white;
+  display:none;
 }
+
+@media only screen and (max-width: 750px) {
+  .main{
+    display:block;
+  }
+  }
 
 .slide {
   position: absolute;
