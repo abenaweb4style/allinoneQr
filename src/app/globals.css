@@ -132,7 +132,7 @@ body {
 
 .google-map {
   width:100%;
-  height: 500px;
+  height: 600px;
   margin-bottom:100px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -178,6 +178,27 @@ body {
   
 }
 
+.phone-ico{
+  margin-top:20px;
+  display:flex;
+  align-items: center;
+
+
+
+  
+}
+
+.fon-ico{
+  padding:10px;
+  border:3px solid rgb(28, 118, 13);
+  border-radius: 50%;
+  transition: all 500ms ease-in-out;
+  margin-right:10px;
+}
+
+.fon-ico:hover{
+  padding:20px
+}
 .fon-icon{
   padding:20px;
   border:2px solid white;

@@ -99,7 +99,7 @@ export default function Home() {
             <h3>4style Clothing</h3>
             <p>Official Store </p>
             <Link target='_blank' href='https://www.google.com/maps/dir//Lancaster+Accra,+Liberation+Road,+Accra/@5.5934084,-0.1807772,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9afa0e163461:0xf035cab6e6449125!2m2!1d-0.180741!2d5.5934003?hl=en&entry=ttu'>Get Directions</Link>
-
+            <Link  className ="phone-ico" href="tel:+233 543645082" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>4style Clothing</p> </Link>
           </div>
         </div>
         <div className='google-map'>
@@ -111,7 +111,7 @@ export default function Home() {
             <h3>Lancaster Hotel, African Store</h3>
             <p>Lancaster </p>
             <Link target='_blank' href='https://www.google.com/maps/dir//Lancaster+Accra,+Liberation+Road,+Accra/@5.5934084,-0.1807772,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9afa0e163461:0xf035cab6e6449125!2m2!1d-0.180741!2d5.5934003?hl=en&entry=ttu'>Get Directions</Link>
-
+            <Link  className ="phone-ico" href="tel:+233 249343399" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>Rich & Rare</p> </Link>
           </div>
         </div>
         <div className='google-map'>
@@ -123,6 +123,7 @@ export default function Home() {
             <h3>Airport Terminal 3</h3>
             <p>Maykrams Clothing </p>
             <Link target='_blank' href="https://www.google.com/maps/dir//Kotoka+International+Airport+-+Accra,+KA+PMB+36+KIA,+Accra/@5.606095,-0.168123,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9b1fff72b87d:0xff2fe8ba5dfa0561!2m2!1d-0.1681235!2d5.6060955?hl=en&entry=ttu">Get Directions</Link>
+            <Link  className ="phone-ico" href="tel:+233 501193032" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>Keskim Clothing</p> </Link>
 
           </div>
         </div>
