@@ -73,6 +73,16 @@ export default function Home() {
       }}>
         <div className="container hero-container">
           <div className="hero-text">
+          <div className="discount">
+            <p>Up to</p>
+            <div className="discount-text">
+            <p className="bold">50%</p>
+            <p className="bold">Discount</p>
+            </div>
+            <p>On</p>
+            <p>Local purchases</p>
+
+          </div>
 
             <Link href="https://4stylegh.store/" target="_blank"><button> Visit Our Online Shop</button></Link>
             <Link  className ="phone-icon" href="tel:+233 543645082" target="_blank"><IconContext.Provider value={{ color: 'white', size: '40px', marginTop:'40px' }}> <div className="fon-icon"><FaPhone /></div> </IconContext.Provider ><p>Contact us</p> </Link>

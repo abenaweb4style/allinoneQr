@@ -196,6 +196,32 @@ body {
   margin-right:10px;
 }
 
+.discount{
+  border:3px solid white;
+  padding:30px 50px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  color:aquamarine;
+  font-style: italic;
+
+}
+
+.discount-text{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  line-height:28px;
+  margin:20px 0;
+
+}
+
+.bold{
+  font-size: xx-large;
+}
+
 .fon-ico:hover{
   padding:20px
 }
@@ -231,7 +257,7 @@ body {
   margin-top:10px;
 }
 .hero-text button{
-  margin-top:270px;
+  margin-top:80px;
   padding:10px 40px;
   
   border-radius:25px;
