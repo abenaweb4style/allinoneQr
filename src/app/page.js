@@ -10,11 +10,12 @@ import backgroundImage4 from "./images/8O3A8822-Edit.jpg"
 import backgroundImage5 from "./images/33i.jpg"
 import backgroundImage6 from "./images/53i.jpg"
 import backgroundImage7 from "./images/67i.jpg"
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import Footer from "./components/Footer";
 import { FaPhone } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import Loading from "./Loading";
 
 
 
@@ -47,6 +48,7 @@ export default function Home() {
 
 
   return (
+    <Suspense fallback={<Loading />}>
     <main className=" main">
       <Navbar />
       <div className="hero_main hidden md:block">
@@ -96,7 +98,6 @@ export default function Home() {
 
 
       <div className='map-wrapper'>
-
         <div className="container">
           <h1 className=""> Drop by one of our 4style Clothing outlets</h1>
         </div>
@@ -142,5 +143,6 @@ export default function Home() {
       {/* <Hero/> */}
       <Footer />
     </main>
+    </Suspense>
   );
 }
