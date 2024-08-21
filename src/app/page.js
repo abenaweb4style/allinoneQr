@@ -126,7 +126,7 @@ export default function Home() {
             <h3>Lancaster Hotel, African Store</h3>
             <p>Lancaster </p>
             <Link target='_blank' href='https://www.google.com/maps/dir//Lancaster+Accra,+Liberation+Road,+Accra/@5.5934084,-0.1807772,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9afa0e163461:0xf035cab6e6449125!2m2!1d-0.180741!2d5.5934003?hl=en&entry=ttu'>Get Directions</Link>
-            <Link  className ="phone-ico" href="tel:+233 249343399" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>Rich & Rare</p> </Link>
+            <Link  className ="phone-ico" href="tel:+233 242050500" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>Auntie Charlotte</p> </Link>
           </div>
         </div>
         <div className='google-map'>
