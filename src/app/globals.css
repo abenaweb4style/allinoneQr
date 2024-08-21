@@ -39,7 +39,7 @@ body {
 }
 .hero_main_mob{
   width:100%;
-  height:100vh;
+  height:600px;
   transition: opacity 1s ease-in-out;
   opacity:0;
   /* background-color: rgb(243, 219, 112); */
@@ -81,7 +81,7 @@ body {
   display:none;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 767px) {
   .main{
     display:block;
   }
