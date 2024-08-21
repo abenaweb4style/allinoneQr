@@ -3,13 +3,13 @@ import Image from "next/image";
 import Hero from "./components/hero";
 import Navbar from "./components/Navbar";
 import Socials from "./components/Socials";
-import backgroundImage from "./images/44.jpg"
+import backgroundImage from "./images/44i.jpg"
 import backgroundImage2 from "./images/17i.jpg"
-import backgroundImage3 from "./images/8c.jpg"
+import backgroundImage3 from "./images/8ci.jpg"
 import backgroundImage4 from "./images/8O3A8822-Edit.jpg"
-import backgroundImage5 from "./images/33.jpg"
-import backgroundImage6 from "./images/53.jpg"
-import backgroundImage7 from "./images/67.jpg"
+import backgroundImage5 from "./images/33i.jpg"
+import backgroundImage6 from "./images/53i.jpg"
+import backgroundImage7 from "./images/67i.jpg"
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Footer from "./components/Footer";
