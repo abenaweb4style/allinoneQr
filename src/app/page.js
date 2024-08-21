@@ -14,6 +14,7 @@ import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import Footer from "./components/Footer";
 import { FaPhone } from 'react-icons/fa';
+import { FaWhatsapp} from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import Loading from "./Loading";
 
@@ -112,6 +113,7 @@ export default function Home() {
             <p>Official Store </p>
             <Link target='_blank' href='https://www.google.com/maps/dir//Lancaster+Accra,+Liberation+Road,+Accra/@5.5934084,-0.1807772,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9afa0e163461:0xf035cab6e6449125!2m2!1d-0.180741!2d5.5934003?hl=en&entry=ttu'>Get Directions</Link>
             <Link  className ="phone-ico" href="tel:+233 543645082" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>4style Clothing</p> </Link>
+            <Link  className ="phone-ico" href="https://wa.me/+233543645082" target="_blank"><IconContext.Provider value={{ color: 'green', size: '30px', marginTop:'10px', marginRight:"" }}> <span className="fon-ico-wa"><FaWhatsapp /></span> </IconContext.Provider ><p>Whastsapp 4style</p> </Link>
           </div>
         </div>
         <div className='google-map'>
