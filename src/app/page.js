@@ -52,7 +52,7 @@ export default function Home() {
     <Suspense fallback={<Loading />}>
     <main className=" main">
       <Navbar />
-      <div className="hero_main hidden md:block">
+      {/* <div className="hero_main hidden md:block"> */}
         {/* <div className="container ">
           <div className="hero-container">
             <div className="hero-text">testing</div>
@@ -62,7 +62,7 @@ export default function Home() {
 
 
 
-      </div>
+      {/* </div> */}
       <div className="hero_main_mob" style={{
         backgroundImage: `url(${img[num].src})`,
         backgroundColor: 'black',
