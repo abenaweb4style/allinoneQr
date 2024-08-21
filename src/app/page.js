@@ -53,12 +53,12 @@ export default function Home() {
     <main className=" main">
       <Navbar />
       <div className="hero_main hidden md:block">
-        <div className="container ">
+        {/* <div className="container ">
           <div className="hero-container">
             <div className="hero-text">testing</div>
           </div>
 
-        </div>
+        </div> */}
 
 
 

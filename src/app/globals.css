@@ -43,10 +43,10 @@ body {
   transition: opacity 1s ease-in-out;
   opacity:0;
   /* background-color: rgb(243, 219, 112); */
-  display:none !important;
+  /* display:none !important;
   @media screen and (max-width: 767px) {
     display:block !important;
-  }
+  } */
 }
 
 
