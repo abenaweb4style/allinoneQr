@@ -64,6 +64,7 @@ export default function Home() {
       </div>
       <div className="hero_main_mob" style={{
         backgroundImage: `url(${img[num].src})`,
+        backgroundColor: 'black',
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
