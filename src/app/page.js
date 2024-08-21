@@ -4,7 +4,7 @@ import Hero from "./components/hero";
 import Navbar from "./components/Navbar";
 import Socials from "./components/Socials";
 import backgroundImage from "./images/44.jpg"
-import backgroundImage2 from "./images/17.jpg"
+import backgroundImage2 from "./images/17i.jpg"
 import backgroundImage3 from "./images/8c.jpg"
 import backgroundImage4 from "./images/8O3A8822-Edit.jpg"
 import backgroundImage5 from "./images/33.jpg"
