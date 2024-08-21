@@ -138,7 +138,9 @@ body {
   border-radius: 20px;
   box-shadow: 0 1.9px 2.2px rgba(0, 0, 0, .02), 0 4.5px 5.3px rgba(0, 0, 0, .028), 0 8.4px 10px rgba(0, 0, 0, .035), 0 15px 17.9px rgba(0, 0, 0, .042), 0 28px 33.4px rgba(0, 0, 0, .05), 0 67px 80px rgba(0, 0, 0, .07);
 }
-
+.map-height{
+  height:680px;
+}
 .google-map iframe {
 
   width: 100%;

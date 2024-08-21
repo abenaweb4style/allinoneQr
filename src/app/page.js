@@ -99,11 +99,11 @@ export default function Home() {
       <Socials />
 
 
-      <div className='map-wrapper'>
+      <div className='map-wrapper '>
         <div className="container">
           <h1 className=""> Drop by one of our 4style Clothing outlets</h1>
         </div>
-        <div className='google-map'>
+        <div className='google-map map-height'>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.189688085716!2d-0.11913672612612175!3d5.685704694295934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d7edf0feff9%3A0xb700798e6efd9c0d!2s4style%20Clothing!5e0!3m2!1sen!2sgh!4v1715961357638!5m2!1sen!2sgh"
             style={{ border: '0' }} allowfullscreen=""
@@ -112,8 +112,8 @@ export default function Home() {
             <h3>4style Clothing</h3>
             <p>Official Store </p>
             <Link target='_blank' href='https://www.google.com/maps/dir//Lancaster+Accra,+Liberation+Road,+Accra/@5.5934084,-0.1807772,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9afa0e163461:0xf035cab6e6449125!2m2!1d-0.180741!2d5.5934003?hl=en&entry=ttu'>Get Directions</Link>
-            <Link  className ="phone-ico" href="tel:+233 543645082 office:+233 302511909 "  target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>4style Clothing</p> </Link>
-            {/* <Link  className ="phone-ico" href="tel:+233 302511909" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>4style Clothing Office</p> </Link> */}
+            <Link  className ="phone-ico" href="tel:+233 543645082"  target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>4style Clothing</p> </Link>
+            <Link  className ="phone-ico" href="tel:+233 302511909" target="_blank"><IconContext.Provider value={{ color: 'red', size: '10px', marginTop:'10px' }}> <span className="fon-ico"><FaPhone /></span> </IconContext.Provider ><p>4style Clothing Office</p> </Link>
             <Link  className ="phone-ico" href="https://wa.me/+233543645082" target="_blank"><IconContext.Provider value={{ color: 'green', size: '30px', marginTop:'10px', marginRight:"" }}> <span className="fon-ico-wa"><FaWhatsapp /></span> </IconContext.Provider ><p>Whastsapp 4style</p> </Link>
           </div>
         </div>
