@@ -8,7 +8,7 @@ export default function FabricLinks() {
       <Navbar />
       <div className="block md:hidden flex flex-col items-center justify-center min-h-screen bg-white">
         <h1 className="text-3xl font-bold">Fabric Links Page</h1>
-        <p className="mt-4 text-lg text-gray-700">This is the Fabric Links page. Add your content here.</p>
+        <p className="mt-4 text-lg text-gray-700">Page under construction.</p>
       </div>
       <Footer />
     </>
