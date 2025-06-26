@@ -1,5 +1,8 @@
 "use client"
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
+import { FaHome, FaImages, FaTshirt, FaCut, FaLink } from 'react-icons/fa'
+import { GiClothes } from 'react-icons/gi'
 
 
 // Add this style to your css file
@@ -10,14 +13,14 @@ const Navbar = () => {
   const [state, setState] = useState(false)
   const navRef = useRef()
 
-  // Replace javascript:void(0) path with your path
+  // Updated navigation with all page links and icons
   const navigation = [
-      { title: "Customers", path: "javascript:void(0)" },
-      { title: "Careers", path: "javascript:void(0)" },
-      { title: "Guides", path: "javascript:void(0)" },
-      { title: "Partners", path: "javascript:void(0)" },
-      { title: "Teams", path: "javascript:void(0)" },
-      { title: "Blog", path: "javascript:void(0)" }
+      { title: "Home", path: "/", icon: FaHome },
+      { title: "Adieyiee", path: "/adieyielinks", icon: GiClothes },
+      { title: "Gallery", path: "/gallerylinks", icon: FaImages },
+      { title: "Clothing", path: "/clothinglinks", icon: FaTshirt },
+      { title: "Fabric", path: "/fabriclinks", icon: FaCut },
+      { title: "Links", path: "/links", icon: FaLink }
   ]
 
   useEffect(() => {
@@ -40,70 +43,114 @@ const Navbar = () => {
     
 
   return (
-      <nav ref={navRef} className="bg-white w-full top-0 z-20">
-          <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
-              <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
-                    <a href="https://4stylegh.store/" target='_blank'>
-                        <img
-                            src="images/4stylelogo.jpg" 
-                            width={120} 
-                            height={50}
-                            alt="Float UI logo"
-                        />
-                    </a>
-                  <div className="lg:hidden">
-                      <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
-                          onClick={() => setState(!state)}
-                      >
-                          {
-                              state ? (
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                                  </svg>
-                              ) : (
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
-                                  </svg>
+      <nav ref={navRef} className="bg-white/95 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-between items-center h-16 lg:h-20">
+                  {/* Logo */}
+                  <div className="flex-shrink-0">
+                      <a href="https://4stylegh.store/" target='_blank' className="flex items-center">
+                          <img
+                              src="images/4stylelogo.jpg" 
+                              width={120} 
+                              height={50}
+                              alt="4Style Logo"
+                              className="h-10 w-auto lg:h-12"
+                          />
+                      </a>
+                  </div>
+
+                  {/* Desktop Navigation - Centered */}
+                  <div className="hidden lg:flex lg:items-center lg:justify-center lg:flex-1">
+                      <div className="flex items-center space-x-10">
+                          {navigation.map((item, idx) => {
+                              const IconComponent = item.icon
+                              return (
+                                  <Link 
+                                      key={idx} 
+                                      href={item.path}
+                                      className="text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors duration-200 relative group text-center flex flex-col items-center"
+                                  >
+                                      <IconComponent className="w-5 h-5 mb-1" />
+                                      {item.title}
+                                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                                  </Link>
                               )
-                          }
+                          })}
+                      </div>
+                  </div>
+                      
+                  {/* CTA Buttons */}
+                  <div className="hidden lg:flex lg:items-center lg:space-x-4">
+                      <a 
+                          href="tel:+233543645082" 
+                          className="text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors duration-200 text-center"
+                      >
+                          Contact
+                      </a>
+                      <a 
+                          href="https://4stylegh.store/" 
+                          target="_blank"
+                          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg text-base font-medium transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center"
+                      >
+                          Shop Now
+                      </a>
+                  </div>
+
+                  {/* Mobile menu button */}
+                  <div className="lg:hidden">
+                      <button 
+                          className="text-gray-700 hover:text-blue-600 p-2 rounded-md transition-colors duration-200"
+                          onClick={() => setState(!state)}
+                          aria-label="Toggle menu"
+                      >
+                          {state ? (
+                              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                          ) : (
+                              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                              </svg>
+                          )}
                       </button>
                   </div>
               </div>
-              <div className={`flex-1 justify-between flex-row-reverse lg:overflow-visible lg:flex lg:pb-0 lg:pr-0 lg:h-auto ${ state ? 'h-screen pb-20 overflow-auto pr-4' : 'hidden'}`}>
-                    <div>
-                        <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
-                            <li className="mt-8 mb-8 lg:mt-0 lg:mb-0 hidden">
-                                <a href="javascript:void(0)" className="text-gray-600 hover:text-indigo-600">
-                                    Contact
-                                </a>
-                            </li>
-                            <li className="mt-4 lg:mt-0">
-                                <a href="javascript:void(0)" className="py-3 px-4 text-center border text-gray-600 hover:text-indigo-600 rounded-md block lg:inline lg:border-0">
-                                    Contact
-                                </a>
-                            </li>
-                            <li className="mt-8 lg:mt-0">
-                                <a href="https://4stylegh.store/" target="_blank"className="py-3 px-4 text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow block lg:inline">
-                                    Shop
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="flex-1">
-                        {/* <ul className="justify-center items-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
-                            {
-                                navigation.map((item, idx) => {
-                                    return (
-                                        <li key={idx} className="text-gray-600 hover:text-indigo-600">
-                                            <a href={item.path}>
-                                                { item.title }
-                                            </a>
-                                        </li>
-                                    )
-                                })
-                            }
-                        </ul> */}
-                    </div>
+          </div>
+
+          {/* Mobile Navigation - Overlay */}
+          <div className={`lg:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-lg transition-all duration-300 ease-in-out ${state ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+              <div className="px-4 py-4 space-y-1">
+                  {navigation.map((item, idx) => {
+                      const IconComponent = item.icon
+                      return (
+                          <Link
+                              key={idx}
+                              href={item.path}
+                              className="block px-3 py-3 text-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200 text-center flex items-center justify-center space-x-3"
+                              onClick={() => setState(false)}
+                          >
+                              <IconComponent className="w-5 h-5" />
+                              <span>{item.title}</span>
+                          </Link>
+                      )
+                  })}
+                  
+                  {/* Mobile CTA Buttons */}
+                  <div className="pt-4 pb-3 border-t border-gray-100">
+                      <a 
+                          href="tel:+233543645082" 
+                          className="block px-3 py-3 text-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200 text-center"
+                      >
+                          Contact Us
+                      </a>
+                      <a 
+                          href="https://4stylegh.store/" 
+                          target="_blank"
+                          className="block mt-2 px-3 py-3 text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-200 text-center"
+                      >
+                          Shop Now
+                      </a>
+                  </div>
               </div>
           </div>
       </nav>

@@ -12,7 +12,6 @@ import backgroundImage6 from "./images/53i.jpg"
 import backgroundImage7 from "./images/67i.jpg"
 import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
-import Footer from "./components/Footer";
 import { FaPhone } from 'react-icons/fa';
 import { FaWhatsapp} from 'react-icons/fa';
 import { IconContext } from 'react-icons';
@@ -50,7 +49,28 @@ export default function Home() {
 
   return (
     <Suspense fallback={<Loading />}>
-    <main className=" main">
+    <main className=" main"
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+        position: 'relative',
+      }}
+    >
+      {/* Overlay for readability */}
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: 'rgba(255,255,255,0.85)',
+        zIndex: 0,
+        pointerEvents: 'none',
+      }} />
+      <div style={{ position: 'relative', zIndex: 1 }}>
       <Navbar />
       {/* <div className="hero_main hidden md:block"> */}
         {/* <div className="container ">
@@ -96,8 +116,190 @@ export default function Home() {
 
 
       </div>
-      <Socials />
+      {/* <Socials /> */}
 
+      {/* Explore 4style Header */}
+      <div className="flex flex-col items-center mt-12 mb-8">
+        <h2
+          className="text-2xl md:text-3xl font-extrabold uppercase tracking-widest text-gray-600"
+          style={{ fontFamily: 'Outfit, sans-serif', letterSpacing: '0.2em', textShadow: '0 2px 12px rgba(0,0,0,0.08)' }}
+        >
+          Explore 4style
+        </h2>
+        <div className="w-16 h-1 mt-3 bg-gray-300 rounded-full"></div>
+      </div>
+
+      {/* Adieyiee Section Label */}
+      <div className="flex flex-col items-center mb-[-8px]">
+        <span
+          className="text-xl md:text-2xl italic font-bold text-gray-500 tracking-tight"
+          style={{ fontFamily: 'Playfair Display, serif', textShadow: '0 2px 8px rgba(80,80,80,0.08)' }}
+        >
+          Adieyie
+        </span>
+        <div className="w-12 h-0.5 mt-1 bg-gray-200 rounded-full"></div>
+      </div>
+
+      {/* Adieyiee Image Section */}
+      <div className="w-full flex justify-center items-center py-8" style={{ position: 'relative' }}>
+        <Link href="/adieyielinks" className="w-full flex justify-center items-center" style={{ position: 'relative', width: '80%' }}>
+          <img
+            src="/adieyiee.png"
+            alt="Adieyiee"
+            style={{ width: '100%', display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.18)', borderRadius: '25px' }}
+          />
+          {/* Caret Icon */}
+          <span style={{
+            position: 'absolute',
+            right: '-30px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            background: 'white',
+            borderRadius: '50%',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 2
+          }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 7L15 12L10 17" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </span>
+        </Link>
+      </div>
+      {/* End Adieyiee Image Section */}
+
+      {/* Gallery Section Label */}
+      <div className="flex flex-col items-center mb-[-8px]">
+        <span
+          className="text-xl md:text-2xl italic font-bold text-gray-500 tracking-tight"
+          style={{ fontFamily: 'Playfair Display, serif', textShadow: '0 2px 8px rgba(80,80,80,0.08)' }}
+        >
+          Gallery
+        </span>
+        <div className="w-12 h-0.5 mt-1 bg-gray-200 rounded-full"></div>
+      </div>
+
+      {/* Gallery Image Section */}
+      <div className="w-full flex justify-center items-center py-8" style={{ position: 'relative' }}>
+        <Link href="/gallerylinks" className="w-full flex justify-center items-center" style={{ position: 'relative', width: '80%' }}>
+          <img
+            src="/gallery.png"
+            alt="Gallery"
+            style={{ width: '100%', display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.18)', borderRadius: '25px' }}
+          />
+          {/* Caret Icon */}
+          <span style={{
+            position: 'absolute',
+            right: '-30px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            background: 'white',
+            borderRadius: '50%',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 2
+          }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 7L15 12L10 17" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </span>
+        </Link>
+      </div>
+      {/* End Gallery Image Section */}
+
+      {/* Clothing Section Label */}
+      <div className="flex flex-col items-center mb-[-8px]">
+        <span
+          className="text-xl md:text-2xl italic font-bold text-gray-500 tracking-tight"
+          style={{ fontFamily: 'Playfair Display, serif', textShadow: '0 2px 8px rgba(80,80,80,0.08)' }}
+        >
+          Clothing
+        </span>
+        <div className="w-12 h-0.5 mt-1 bg-gray-200 rounded-full"></div>
+      </div>
+
+      {/* Clothing Image Section */}
+      <div className="w-full flex justify-center items-center py-8" style={{ position: 'relative' }}>
+        <Link href="/clothinglinks" className="w-full flex justify-center items-center" style={{ position: 'relative', width: '80%' }}>
+          <img
+            src="/clothing.png"
+            alt="Clothing"
+            style={{ width: '100%', display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.18)', borderRadius: '25px' }}
+          />
+          {/* Caret Icon */}
+          <span style={{
+            position: 'absolute',
+            right: '-30px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            background: 'white',
+            borderRadius: '50%',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 2
+          }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 7L15 12L10 17" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </span>
+        </Link>
+      </div>
+      {/* End Clothing Image Section */}
+
+      {/* Fabric Section Label */}
+      <div className="flex flex-col items-center mb-[-8px]">
+        <span
+          className="text-xl md:text-2xl italic font-bold text-gray-500 tracking-tight"
+          style={{ fontFamily: 'Playfair Display, serif', textShadow: '0 2px 8px rgba(80,80,80,0.08)' }}
+        >
+          Fabric
+        </span>
+        <div className="w-12 h-0.5 mt-1 bg-gray-200 rounded-full"></div>
+      </div>
+
+      {/* Fabric Image Section */}
+      <div className="w-full flex justify-center items-center py-8" style={{ position: 'relative' }}>
+        <Link href="/fabriclinks" className="w-full flex justify-center items-center" style={{ position: 'relative', width: '80%' }}>
+          <img
+            src="/fabric.png"
+            alt="Fabric"
+            style={{ width: '100%', display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.18)', borderRadius: '25px' }}
+          />
+          {/* Caret Icon */}
+          <span style={{
+            position: 'absolute',
+            right: '-30px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            background: 'white',
+            borderRadius: '50%',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 2
+          }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 7L15 12L10 17" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </span>
+        </Link>
+      </div>
+      {/* End Fabric Image Section */}
 
       <div className='map-wrapper '>
         <div className="container">
@@ -143,9 +345,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="spacer"></div>
-      {/* <Hero/> */}
-      <Footer />
+    </div>
     </main>
     </Suspense>
   );
