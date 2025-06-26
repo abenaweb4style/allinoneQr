@@ -64,8 +64,8 @@ export default function GalleryLinks() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-full"></div>
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Join our vibrant community! Follow us across all platforms and stay updated with the latest fashion trends, 
-              behind-the-scenes content, and exclusive offers. Let's create something beautiful together! ✨
+              {`Join our vibrant community! Follow us across all platforms and stay updated with the latest fashion trends, 
+              behind-the-scenes content, and exclusive offers. Let's create something beautiful together! ✨`}
             </p>
             <div className="flex justify-center mt-6 space-x-4">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
