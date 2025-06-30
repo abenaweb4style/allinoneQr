@@ -53,12 +53,17 @@ export default function GalleryLinks() {
         <div className="text-center py-12 bg-gradient-to-br from-blue-50 via-purple-50 to-teal-50 rounded-2xl mx-4 mb-8">
           <div className="max-w-4xl mx-auto px-6">
             <div className="flex justify-center mb-6">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-full shadow-lg">
-                <span className="text-4xl">🌟</span>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full shadow-lg" style={{ backgroundColor: '#e32922' }}>
+                <img
+                  src="/adinkra-gyenyame.PNG"
+                  alt="Adinkra Gye Nyame Symbol"
+                  className="w-10 h-10 object-contain"
+                  style={{ filter: 'drop-shadow(0 2px 8px rgba(80,0,120,0.08))' }}
+                />
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent mb-4">
-              Connect with Gallery
+              Connect with our art Gallery
             </h1>
             <div className="flex justify-center mb-6">
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-full"></div>
