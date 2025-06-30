@@ -137,6 +137,21 @@ export default function ClothingLinks() {
             </a>
           ))}
         </div>
+        {/* Online Shop Card Section */}
+        <div className="flex justify-center mb-6 px-4">
+          <a
+            href="https://4stylegh.store/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center rounded-xl shadow-lg p-8 bg-gradient-to-tr from-purple-100 via-pink-100 to-red-100 hover:from-purple-200 hover:via-pink-200 hover:to-red-200 transition-all duration-200 max-w-md w-full text-center group"
+            style={{ minHeight: '180px' }}
+          >
+            <span className="text-3xl mb-3 text-purple-600 group-hover:scale-110 transition-transform">🛍️</span>
+            <span className="font-bold text-xl text-gray-800 mb-2 group-hover:text-purple-700">Shop Our Latest Collection</span>
+            <span className="text-base text-gray-600 mb-4">Discover our curated selection of trendy clothing, accessories, and fashion essentials. Shop with confidence and style!</span>
+            <span className="inline-block text-white px-6 py-2 rounded-lg font-semibold shadow-md animate-pulse bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 hover:from-blue-700 hover:via-purple-700 hover:to-teal-700 transition-all duration-300">Visit Online Shop</span>
+          </a>
+        </div>
       </div>
     </div>
   );
