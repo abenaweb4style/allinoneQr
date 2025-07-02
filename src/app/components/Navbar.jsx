@@ -48,7 +48,7 @@ const Navbar = () => {
               <div className="flex justify-between items-center h-16 lg:h-20">
                   {/* Logo */}
                   <div className="flex-shrink-0">
-                      <a href="https://4stylegh.store/" target='_blank' className="flex items-center">
+                      <Link href="/" className="flex items-center">
                           <img
                               src="images/4stylelogo.jpg" 
                               width={120} 
@@ -56,7 +56,7 @@ const Navbar = () => {
                               alt="4Style Logo"
                               className="h-10 w-auto lg:h-12"
                           />
-                      </a>
+                      </Link>
                   </div>
 
                   {/* Desktop Navigation - Centered */}

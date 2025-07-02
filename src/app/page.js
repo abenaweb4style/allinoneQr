@@ -10,7 +10,7 @@ import backgroundImage4 from "./images/8O3A8822-Edit.jpg"
 import backgroundImage5 from "./images/33i.jpg"
 import backgroundImage6 from "./images/53i.jpg"
 import backgroundImage7 from "./images/67i.jpg"
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { FaPhone } from 'react-icons/fa';
 import { FaWhatsapp} from 'react-icons/fa';
@@ -22,30 +22,16 @@ import Loading from "./Loading";
 export default function Home() {
   const img = [backgroundImage, backgroundImage2, backgroundImage3, backgroundImage4, backgroundImage5, backgroundImage6, backgroundImage7]
 
-  const [num, setNum] = useState(0)
+  const [num, setNum] = useState(0);
+  const timeoutRef = useRef(null);
+  const imgCount = img.length;
 
-  const ImageRotator = () => {
-
-
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setNum((prevIndex) => (prevIndex + 1) % img.length);
-      }, 4000); // Change image every 500ms
-      return () => clearInterval(intervalId); // Clean up on unmount
-    }, [img.length])
-
-  }
-
-  ImageRotator()
-  // setInterval(Imageslider,850);
-
-
-
-  // useEffect(()=>{
-  //   setNum(intervalId)
-  // }, intervalId)
-
-
+  useEffect(() => {
+    timeoutRef.current = setTimeout(() => {
+      setNum((prevIndex) => (prevIndex + 1) % imgCount);
+    }, 6000);
+    return () => clearTimeout(timeoutRef.current);
+  }, [num, imgCount]);
 
   return (
     <Suspense fallback={<Loading />}>
@@ -83,38 +69,54 @@ export default function Home() {
 
 
       {/* </div> */}
-      <div className="hero_main_mob" style={{
-        backgroundImage: `url(${img[num].src})`,
-        backgroundColor: 'black',
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
-        <div className="container hero-container">
-          <div className="hero-text">
-          <div className="discount">
-            <p>Up to</p>
-            <div className="discount-text">
-            <p className="bold">50%</p>
-            <p className="bold">Discount</p>
+      <div className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden">
+        {/* Sliding Images */}
+        <div className="absolute inset-0 w-full h-full flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${num * 100}%)` }}>
+          {img.map((image, idx) => (
+            <div
+              key={idx}
+              className="w-full h-full flex-shrink-0"
+              style={{
+                backgroundImage: `url(${image.src})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                filter: 'brightness(0.85)',
+                transition: 'transform 4s cubic-bezier(0.4,0,0.2,1)',
+              }}
+            />
+          ))}
+        </div>
+        {/* Permanent Overlay */}
+        <div className="absolute inset-0 z-20 pointer-events-none" style={{ background: 'rgba(0,0,0,0.24)' }} />
+        <div className="absolute inset-0 flex items-center justify-center z-30">
+          <div className="container hero-container">
+            <div className="hero-text">
+              <div className="discount">
+                <p>Up to</p>
+                <div className="discount-text">
+                  <p className="bold">50%</p>
+                  <p className="bold">Discount</p>
+                </div>
+                <p>On</p>
+                <p>Local purchases</p>
+              </div>
+              <Link href="https://4stylegh.store/" target="_blank"><button> Visit Our Online Shop</button></Link>
+              <Link className ="phone-icon" href="tel:+233 543645082" target="_blank"><IconContext.Provider value={{ color: 'white', size: '40px', marginTop:'40px' }}> <div className="fon-icon"><FaPhone /></div> </IconContext.Provider ><p>Contact us</p> </Link>
             </div>
-            <p>On</p>
-            <p>Local purchases</p>
-
-          </div>
-
-            <Link href="https://4stylegh.store/" target="_blank"><button> Visit Our Online Shop</button></Link>
-            <Link  className ="phone-icon" href="tel:+233 543645082" target="_blank"><IconContext.Provider value={{ color: 'white', size: '40px', marginTop:'40px' }}> <div className="fon-icon"><FaPhone /></div> </IconContext.Provider ><p>Contact us</p> </Link>
-
           </div>
         </div>
-
-
+        {/* Navigation dots */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 z-40">
+          {img.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setNum(idx)}
+              className={`w-3 h-3 rounded-full border-2 border-white transition-all duration-300 ${num === idx ? 'bg-white scale-125 shadow-lg' : 'bg-gray-400 opacity-60'}`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
       </div>
       {/* <Socials /> */}
 
