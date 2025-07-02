@@ -106,9 +106,9 @@ export default function AdieyieeLinks() {
                   <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-full"></div>
                 </div>
                 <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed text-center mb-8 px-2">
-                  Discover the heart of <span className="font-semibold text-blue-700">Adieyie</span>, where every thread tells a story of heritage and every design is a testament to timeless craftsmanship.<br/>
-                  Connect with us to explore our world of <span className="font-semibold text-purple-700">bespoke fashion</span>, cultural inspiration, and the artistry that defines us.<br/>
-                  Your journey into authentic style begins here.
+                  {`Discover the heart of ${<span className="font-semibold text-blue-700">Adieyie</span>}, where every thread tells a story of heritage and every design is a testament to timeless craftsmanship.${<br/>}
+                  Connect with us to explore our world of ${<span className="font-semibold text-purple-700">bespoke fashion</span>}, cultural inspiration, and the artistry that defines us.${<br/>}
+                  Your journey into authentic style begins here.`}
                 </p>
                 <div className="flex justify-center mt-6 space-x-4">
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">

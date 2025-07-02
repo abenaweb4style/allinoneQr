@@ -103,9 +103,9 @@ export default function ClothingLinks() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-full"></div>
             </div>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed text-center mb-8 px-2">
-              Step into the world of <span className="font-semibold text-blue-700">4Style Clothing</span>, where contemporary fashion meets timeless elegance.<br/>
-              Follow our journey, from initial design sketches to the final stitch.<br/>
-              Connect with us for <span className="font-semibold text-purple-700">style tips</span>, <span className="font-semibold text-teal-700">new collection alerts</span>, and a behind-the-scenes look at how we're shaping the future of fashion.
+              {`Step into the world of ${<span className="font-semibold text-blue-700">4Style Clothing</span>}, where contemporary fashion meets timeless elegance.${<br/>}
+              Follow our journey, from initial design sketches to the final stitch.${<br/>}
+            Connect with us for ${<span className="font-semibold text-purple-700">style tips</span>}, ${<span className="font-semibold text-teal-700">new collection alerts</span>}, and a behind-the-scenes look at how we're shaping the future of fashion.`}
             </p>
             <div className="flex justify-center mt-6 space-x-4">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">

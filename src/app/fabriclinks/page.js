@@ -97,9 +97,9 @@ export default function FabricLinks() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-full"></div>
             </div>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed text-center mb-8 px-2">
-              Immerse yourself in the vibrant world of <span className="font-semibold text-blue-700">4Style Fabrics</span>.<br/>
-              From the rich textures of our traditional textiles to the bold patterns of our contemporary prints, there's a story in every fiber.<br/>
-              Connect with us to discover our <span className="font-semibold text-purple-700">latest collections</span>, learn about the artisans behind our fabrics, and find inspiration for your next creative project.
+             {` Immerse yourself in the vibrant world of ${<span className="font-semibold text-blue-700">4Style Fabrics</span>}.<br/>
+              From the rich textures of our traditional textiles to the bold patterns of our contemporary prints, ${<span> there's</span>} a story in every fiber.<br/>
+              Connect with us to discover our ${<span className="font-semibold text-purple-700">latest collections</span>}, learn about the artisans behind our fabrics, and find inspiration for your next creative project.`}
             </p>
             <div className="flex justify-center mt-6 space-x-4">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
