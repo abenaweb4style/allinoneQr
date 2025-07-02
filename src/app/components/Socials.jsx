@@ -56,7 +56,7 @@ const Socials = () => {
                         </li>
                         {/* LOGO 5 */}
                         <li>
-                        <a href="https://www.linkedin.com/in/4styleclothing-by-abena-553159281/" target='_blank'>
+                        <a href="https://www.linkedin.com/company/4styleclothing/" target='_blank'>
                                 <img
                                     src="images/Linkedin.png"
                                     width={120}

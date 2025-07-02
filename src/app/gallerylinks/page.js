@@ -5,7 +5,7 @@ import { FaYoutube, FaTiktok, FaFacebook, FaInstagram, FaPinterest } from 'react
 const socialLinks = [
   {
     name: 'YouTube',
-    url: 'https://youtube.com/', // Replace with actual URL
+    url: 'https://youtu.be/dSKj0XLvrk4', // Replace with actual URL
     icon: FaYoutube,
     color: 'bg-red-600',
   },
@@ -29,7 +29,7 @@ const socialLinks = [
   },
   {
     name: 'Pinterest',
-    url: 'https://pinterest.com/', // Replace with actual URL
+    url: 'https://pin.it/7padxKmlC', // Replace with actual URL
     icon: FaPinterest,
     color: 'bg-red-500',
   },

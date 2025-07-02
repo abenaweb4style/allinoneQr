@@ -5,7 +5,7 @@ import { FaYoutube, FaTiktok, FaFacebook, FaInstagram, FaWhatsapp, FaPinterest, 
 const socialLinks = [
   {
     name: 'YouTube',
-    url: 'https://youtu.be/LdlkKCtxst4?si=aMX0mB1HRqBLGGIs',
+    url: 'https://youtu.be/mjZnCyJZOWk',
     icon: FaYoutube,
     color: 'bg-red-600',
   },
@@ -35,7 +35,7 @@ const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/4styleclothing-by-abena-553159281/',
+    url: 'https://www.linkedin.com/company/4styleclothing/',
     icon: FaLinkedin,
     color: 'bg-blue-600',
   },

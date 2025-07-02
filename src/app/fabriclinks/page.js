@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     name: 'TikTok',
-    url: 'https://www.tiktok.com/@4styleclothingbya?_t=8mQ5S6zL8X0&_r=',
+    url: 'https://www.tiktok.com/@4stylefabrics?_t=ZM-8xfNeDPcoCM&_r=1',
     icon: FaTiktok,
     color: 'bg-black',
   },
@@ -29,9 +29,15 @@ const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/4styleclothing-by-abena-553159281/',
+    url: 'https://www.linkedin.com/company/4styleclothing/',
     icon: FaLinkedin,
     color: 'bg-blue-600',
+  },
+  {
+    name: 'WhatsApp',
+    url: 'https://wa.me/233543645082',
+    icon: FaWhatsapp,
+    color: 'bg-green-500',
   },
 ];
 

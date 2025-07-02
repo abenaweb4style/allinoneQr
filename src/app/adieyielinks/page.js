@@ -11,7 +11,7 @@ const socialLinks = [
   },
   {
     name: 'TikTok',
-    url: 'https://tiktok.com/', // Replace with actual URL
+    url: 'https://www.tiktok.com/@4styleclothingbya?_t=ZM-8xfMtcCKhLa&_r=1', // Replace with actual URL
     icon: FaTiktok,
     color: 'bg-black',
   },
