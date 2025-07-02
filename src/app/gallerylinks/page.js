@@ -69,8 +69,7 @@ export default function GalleryLinks() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-full"></div>
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              {`Join our vibrant community! Follow us across all platforms and stay updated with the latest fashion trends, 
-              behind-the-scenes content, and exclusive offers. Let's create something beautiful together! ✨`}
+              {`Welcome to the 4Style Art Gallery, a curated space where creativity knows no bounds. We showcase a diverse collection of works from emerging and established artists. Connect with us to explore our latest exhibitions, meet the artists, and immerse yourself in the transformative power of art.`}
             </p>
             <div className="flex justify-center mt-6 space-x-4">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">

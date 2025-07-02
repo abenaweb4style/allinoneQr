@@ -103,7 +103,7 @@ export default function ClothingLinks() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-full"></div>
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              {`Join our vibrant community! Follow us across all platforms and stay updated with the latest clothing trends, behind-the-scenes content, and exclusive offers. Let's create something beautiful together! ✨`}
+              {`Step into the world of 4Style Clothing, where contemporary fashion meets timeless elegance. Follow our journey, from initial design sketches to the final stitch. Connect with us for style tips, new collection alerts, and a behind-the-scenes look at how we're shaping the future of fashion.`}
             </p>
             <div className="flex justify-center mt-6 space-x-4">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
